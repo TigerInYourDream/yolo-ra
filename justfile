@@ -26,10 +26,10 @@ demo model="runs/*/weights/best.pt":
     @echo "🌐 启动 Web 演示..."
     source .venv/bin/activate && python scripts/demo.py --model {{model}}
 
-# 预测图片
-predict image="datasets/red-alert/test/images":
-    @echo "📸 预测图片..."
-    source .venv/bin/activate && yolo predict model=runs/*/weights/best.pt source={{image}} save=true
+# 预测
+predict:
+    @echo "📸 预测..."
+    yolo predict model=runs/red-alert_20250901_001914/weights/best.pt source=/Users/xxxx/Desktop/openra.mp4 show=true conf=0.25
 
 # 查看训练结果
 results:

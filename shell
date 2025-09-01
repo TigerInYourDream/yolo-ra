@@ -1,6 +1,6 @@
-source .venv/bin/activate && yolo predict model=runs/red-alert_20250901_001914/weights/best.pt source=/Users/zhaoyue/Desktop/openra.mp4 save=true conf=0.25
+source .venv/bin/activate && yolo predict model=runs/red-alert_20250901_001914/weights/best.pt source=/Users/xxxxx/Desktop/openra.mp4 save=true conf=0.25
 
-yolo predict model=runs/red-alert_20250901_001914/weights/best.pt source=/Users/zhaoyue/Desktop/openra.mp4 show=true conf=0.25
+yolo predict model=runs/red-alert_20250901_001914/weights/best.pt source=/Users/xxxxx/Desktop/openra.mp4 show=true conf=0.25
 
 uv pip install ultralytics torch torchvision pillow pyyaml tqdm numpy opencv-python matplotlib scipy
 
