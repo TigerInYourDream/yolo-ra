@@ -1,0 +1,19 @@
+# YOLO 红色警戒数据集配置
+path: /Users/zhaoyue/workspace/GOSIM/yolo-ra/datasets/red-alert
+train: train/images
+val: valid/images
+test: test/images
+
+# 类别
+nc: 7
+names: ['bingying', 'dianchang', 'jidi', 'jungongchang', 'keji', 'kuangchang', 'leida']
+
+# 中文名称对照
+names_cn:
+  bingying: '兵营'
+  dianchang: '电厂'
+  jidi: '基地'
+  jungongchang: '军工厂'
+  keji: '科技实验室'
+  kuangchang: '矿场'
+  leida: '雷达'

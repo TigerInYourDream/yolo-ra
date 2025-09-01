@@ -1,0 +1,44 @@
+# YOLOv8 核心
+ultralytics>=8.3.0
+
+# PyTorch for Apple Silicon (MPS)
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# 图像处理
+opencv-python>=4.9.0
+pillow>=10.2.0
+
+# 数据标注
+labelme>=5.4.0
+labelImg>=1.8.6
+
+# Web UI
+gradio>=4.19.0
+streamlit>=1.31.0
+
+# 数据分析
+pandas>=2.2.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# 工具库
+tqdm>=4.66.0
+pyyaml>=6.0.1
+scipy>=1.12.0
+scikit-learn>=1.4.0
+
+# 开发工具
+ipython>=8.20.0
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+
+# 监控
+tensorboard>=2.15.0
+wandb>=0.16.0
+
+# 视频处理（可选）
+# ffmpeg-python>=0.2.0

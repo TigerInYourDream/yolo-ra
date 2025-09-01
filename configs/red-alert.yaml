@@ -1,0 +1,50 @@
+# YOLO 红色警戒单位识别数据集配置
+
+# 数据集路径
+path: /Users/zhaoyue/workspace/GOSIM/yolo-ra/datasets/red-alert  # 数据集根目录
+train: images/train  # 训练集图片路径（相对于path）
+val: images/val      # 验证集图片路径
+test: images/test    # 测试集图片路径（可选）
+
+# 类别定义（10个红警单位）
+names:
+  0: allied_base      # 盟军基地（建造厂）
+  1: soviet_base      # 苏军基地（建造厂）
+  2: war_factory      # 战车工厂
+  3: barracks         # 兵营
+  4: refinery         # 矿场/精炼厂
+  5: power_plant      # 电厂/发电站
+  6: tank             # 坦克（各种型号）
+  7: infantry         # 步兵（士兵单位）
+  8: aircraft         # 飞机（空军单位）
+  9: ore_truck        # 矿车/采矿车
+
+# 类别颜色（可选，用于可视化）
+colors:
+  allied_base: [255, 107, 107]    # 红色
+  soviet_base: [78, 205, 196]     # 青色
+  war_factory: [69, 183, 209]     # 蓝色
+  barracks: [150, 206, 180]       # 绿色
+  refinery: [255, 234, 167]       # 黄色
+  power_plant: [221, 160, 221]    # 紫色
+  tank: [152, 216, 200]           # 薄荷绿
+  infantry: [247, 220, 111]       # 金色
+  aircraft: [187, 143, 206]       # 淡紫
+  ore_truck: [133, 193, 226]      # 天蓝
+
+# 数据集信息
+dataset_info:
+  description: "红色警戒游戏单位识别数据集"
+  version: "1.0.0"
+  year: 2024
+  contributor: "YOLO-RA Project"
+  url: "https://github.com/yourusername/yolo-ra"
+  
+# 训练建议参数
+training_params:
+  epochs: 100
+  batch_size: 16
+  imgsz: 640
+  patience: 50
+  workers: 8
+  device: mps  # 使用 Apple Silicon GPU

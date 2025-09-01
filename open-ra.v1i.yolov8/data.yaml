@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['bingying', 'dianchang', 'jidi', 'jungongchang', 'keji', 'kuangchang', 'leida']
+
+roboflow:
+  workspace: openra-target
+  project: open-ra-hsi1v
+  version: 1
+  license: Private
+  url: https://app.roboflow.com/openra-target/open-ra-hsi1v/1

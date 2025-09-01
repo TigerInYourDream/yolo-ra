@@ -1,0 +1,29 @@
+# YOLO红色警戒项目配置 - 仅用于依赖管理，不作为包发布
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.3.0",
+]
+
+[tool.uv.pip]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+extra-index-url = ["https://download.pytorch.org/whl/cpu"]
+
+# 项目依赖列表（供参考）
+# dependencies = [
+#     "ultralytics>=8.3.0",
+#     "torch>=2.1.0",
+#     "torchvision>=0.16.0",
+#     "opencv-python>=4.9.0",
+#     "pillow>=10.2.0",
+#     "labelme>=5.4.0",
+#     "gradio>=4.19.0",
+#     "pandas>=2.2.0",
+#     "numpy>=1.26.0",
+#     "matplotlib>=3.8.0",
+#     "tqdm>=4.66.0",
+#     "pyyaml>=6.0.1",
+#     "scipy>=1.12.0",
+# ]
